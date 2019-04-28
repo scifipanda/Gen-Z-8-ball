@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<head>
+    <link href="main.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kanit:800|Karla|Righteous" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <h1>Gen Z 8 ball</h1>
+        <button onclick="display()">Yeet!</button>
+        <p style="visibility: hidden" id="response"></p>
+    </div>
+</body>
+
+<script>
+let responses=["You'd take an L for sure fam",
+    'That would be lit',
+    'Ask your fam',
+    "That'd definitely be a #bruhmoment",
+    'Yeet that shit',
+    "That's a big yikes from me dawg",
+    'Oof',
+    'Probably a big oof',
+    '<img alt=":joy:" style="width: 50px" src="joy.png">',
+    "So savage if you did that",
+    "That'd be lowkey sick af fam",
+    'This is it chief',
+    'Do it for the clout',
+    "This ain't it chief",
+    "It'd be deadass lit if you yeeted that shit fam",
+    "That's headass my guy",
+    "That's hella hype",
+    'Yeet',
+    "You'd be cancelled"
+];
+
+function display(){
+    document.getElementById('response').className ='animation';
+    document.getElementById("response").style.visibility = 'visible';
+    let answer = responses[Math.floor(Math.random() * responses.length)];
+    document.getElementById("response").innerHTML = answer;
+}
+</script>

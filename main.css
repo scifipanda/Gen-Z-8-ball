@@ -1,0 +1,84 @@
+body{
+    background: rgb(68, 5, 68);
+}
+
+h1{
+    font-family: 'Righteous', Arial;
+    color: rgb(219, 117, 219);
+    font-size: 50pt;
+    text-shadow: rgb(19, 3, 19) 5px 5px 0;
+    user-select: none;
+}
+
+div{
+    text-align: center;
+    perspective: 500px;
+}
+
+button{
+    font-family: 'Kanit', sans-serif;
+    margin-bottom: 5%;
+    padding: 0 15px;
+    background: rgb(224, 64, 224);
+    border: 2px solid rgb(51, 4, 51);
+    border-radius: 15px;
+    color: rgb(68, 5, 68);
+    font-size: 30pt;
+    letter-spacing: 2px;
+    cursor: pointer;
+    user-select: none;
+    box-shadow: black 0 2px 5px;
+}
+button:focus{
+    outline: none;
+}
+button:hover{
+    background:rgb(235, 83, 235);
+    animation-name: buttonUp;
+    animation-duration: .1s;
+    animation-fill-mode: forwards;
+}
+button:active{
+    animation: click .1s forwards;
+}
+
+p{
+    font-family: 'Karla', sans-serif;
+    width: max-content;
+    margin: 0 auto;
+    color: rgb(236, 199, 231);
+    font-size: 40pt;
+    background: rgb(154, 82, 175);
+    border: 2px solid rgb(51, 4, 51);
+    border-radius: 25px;
+    font-weight: 100;
+    padding: 5px 20px;
+    cursor: default;
+    user-select: none;
+    box-shadow: black 0 4px 4px;
+}
+
+.idk{
+    animation-name: idk;
+}
+
+.animation{
+    animation-name: flip;
+    animation-duration: .2s;
+}
+@keyframes flip{
+    0%{transform: rotateX(90deg);
+  }
+}
+@keyframes buttonUp{
+    100%{
+        transform: translateY(-3px);
+        box-shadow: black 0 5px 5px;
+    }
+}
+
+@keyframes click{
+    100%{
+        box-shadow: black 0 2px 5px;
+    }
+}
