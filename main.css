@@ -45,6 +45,10 @@ button:active{
 p{
     font-family: 'Karla', sans-serif;
     width: max-content;
+    width: fit-content;
+    width: intrinsic;
+    width: -moz-max-content;
+    width: -webkit-max-content; 
     margin: 0 auto;
     color: rgb(236, 199, 231);
     font-size: 40pt;
